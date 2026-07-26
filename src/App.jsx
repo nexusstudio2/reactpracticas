@@ -12,6 +12,10 @@ function App() {
     setContador(contador + 1);
   };
 
+  const disminuir = () => {
+    setContador(contador - 1);
+  };
+
   return (
     <Card
       style={{
@@ -24,6 +28,9 @@ function App() {
       <Typography variant="h4">{contador}</Typography>
       <Button variant="contained" onClick={incrementar}>
         Incrementar
+      </Button>
+      <Button variant="contained" onClick={disminuir} style={{ marginLeft: "10px" }}>
+        Disminuir
       </Button>
     </Card>
   );
